@@ -1,0 +1,4 @@
+[submodule "external/tp_stubz"]
+	path = external/tp_stubz
+	url = https://github.com/uyjulian/tp_stubz.git
+	branch = mingw
