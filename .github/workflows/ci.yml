@@ -34,7 +34,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: binary-win32-intel32-gcc
-          path: ./*.7z
+          path: ./*/*.7z
 
   build-win32-intel64-gcc:
     runs-on: ubuntu-20.04
@@ -50,7 +50,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: binary-win32-intel64-gcc
-          path: ./*.7z
+          path: ./*/*.7z
 
   create-release:
     needs: [build-win32-intel32-gcc, build-win32-intel64-gcc]
